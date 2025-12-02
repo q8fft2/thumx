@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - YouTube Frame Extractor</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .privacy-content {
+      background: #fff;
+      padding: 30px;
+      margin: 30px 0;
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow);
+    }
+    
+    .privacy-content h2 {
+      color: var(--dark-color);
+      margin-bottom: 20px;
+    }
+    
+    .privacy-content h3 {
+      margin-top: 30px;
+      margin-bottom: 15px;
+      color: var(--secondary-color);
+    }
+    
+    .privacy-content p {
+      margin-bottom: 15px;
+      line-height: 1.7;
+    }
+    
+    .privacy-content ul {
+      margin-left: 20px;
+      margin-bottom: 15px;
+    }
+    
+    .privacy-content li {
+      margin-bottom: 8px;
+    }
+    
+    .back-link {
+      display: inline-block;
+      margin-top: 20px;
+      color: var(--primary-color);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    
+    .back-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <img src="assets/icons/icon128.png" alt="YouTube Frame Extractor Logo">
+          <h1>YouTube Frame Extractor</h1>
+        </div>
+        <div class="language-selector">
+          <button id="en-btn" class="language-btn active" data-lang="en">EN</button>
+          <button id="ar-btn" class="language-btn" data-lang="ar">عربي</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="privacy-content">
+      <h2 id="privacyTitle">Privacy Policy</h2>
+      
+      <p id="privacyIntro">
+        YouTube Frame Extractor is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use our service.
+      </p>
+      
+      <h3 id="infoCollectedTitle">Information We Collect</h3>
+      <p id="infoCollectedText">
+        YouTube Frame Extractor is designed with privacy in mind:
+      </p>
+      <ul>
+        <li id="infoPoint1">We do not collect any personal information from you</li>
+        <li id="infoPoint2">We do not track your browsing habits</li>
+        <li id="infoPoint3">We do not store your YouTube viewing history</li>
+        <li id="infoPoint4">We do not send any of your data to remote servers</li>
+      </ul>
+      
+      <h3 id="localStorageTitle">Local Storage</h3>
+      <p id="localStorageText">
+        We only store your settings (like preferred language and format settings) locally on your device using browser's localStorage. This information never leaves your device and is solely used to improve your experience with the application.
+      </p>
+      
+      <h3 id="youtubeTitle">YouTube Data</h3>
+      <p id="youtubeText">
+        When you use our service to extract frames from YouTube videos:
+      </p>
+      <ul>
+        <li id="youtubePoint1">We use the YouTube API to display videos</li>
+        <li id="youtubePoint2">We only process the video frame data that you explicitly request</li>
+        <li id="youtubePoint3">All processing happens in your browser, on your device</li>
+        <li id="youtubePoint4">No video content or user data is sent to our servers</li>
+      </ul>
+      
+      <h3 id="changesTitle">Changes to This Policy</h3>
+      <p id="changesText">
+        We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.
+      </p>
+      
+      <h3 id="contactTitle">Contact Us</h3>
+      <p id="contactText">
+        If you have any questions about this Privacy Policy, please contact us.
+      </p>
+      
+      <a href="index.html" class="back-link" id="backLink">← Back to Home</a>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p id="footerText">YouTube Frame Extractor © 2025</p>
+      <p id="disclaimerText"><small>YouTube is a trademark of Google LLC. This tool is not affiliated with or endorsed by YouTube or Google.</small></p>
+    </div>
+  </footer>
+
+  <script>
+    // Simple language switcher for privacy page
+    document.addEventListener('DOMContentLoaded', () => {
+      const languageBtns = document.querySelectorAll('.language-btn');
+      
+      // Privacy page translations
+      const translations = {
+        en: {
+          privacyTitle: "Privacy Policy",
+          privacyIntro: "YouTube Frame Extractor is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use our service.",
+          infoCollectedTitle: "Information We Collect",
+          infoCollectedText: "YouTube Frame Extractor is designed with privacy in mind:",
+          infoPoint1: "We do not collect any personal information from you",
+          infoPoint2: "We do not track your browsing habits",
+          infoPoint3: "We do not store your YouTube viewing history",
+          infoPoint4: "We do not send any of your data to remote servers",
+          localStorageTitle: "Local Storage",
+          localStorageText: "We only store your settings (like preferred language and format settings) locally on your device using browser's localStorage. This information never leaves your device and is solely used to improve your experience with the application.",
+          youtubeTitle: "YouTube Data",
+          youtubeText: "When you use our service to extract frames from YouTube videos:",
+          youtubePoint1: "We use the YouTube API to display videos",
+          youtubePoint2: "We only process the video frame data that you explicitly request",
+          youtubePoint3: "All processing happens in your browser, on your device",
+          youtubePoint4: "No video content or user data is sent to our servers",
+          changesTitle: "Changes to This Policy",
+          changesText: "We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.",
+          contactTitle: "Contact Us",
+          contactText: "If you have any questions about this Privacy Policy, please contact us.",
+          backLink: "← Back to Home",
+          footerText: "YouTube Frame Extractor © 2025",
+          disclaimerText: "YouTube is a trademark of Google LLC. This tool is not affiliated with or endorsed by YouTube or Google."
+        },
+        ar: {
+          privacyTitle: "سياسة الخصوصية",
+          privacyIntro: "يلتزم مستخرج إطارات يوتيوب بحماية خصوصيتك. تشرح سياسة الخصوصية هذه كيفية جمع واستخدام وحماية معلوماتك عند استخدام خدمتنا.",
+          infoCollectedTitle: "المعلومات التي نجمعها",
+          infoCollectedText: "تم تصميم مستخرج إطارات يوتيوب مع وضع الخصوصية في الاعتبار:",
+          infoPoint1: "نحن لا نجمع أي معلومات شخصية منك",
+          infoPoint2: "نحن لا نتتبع عادات التصفح الخاصة بك",
+          infoPoint3: "نحن لا نخزن سجل مشاهدتك على يوتيوب",
+          infoPoint4: "نحن لا نرسل أي من بياناتك إلى خوادم بعيدة",
+          localStorageTitle: "التخزين المحلي",
+          localStorageText: "نحن نخزن إعداداتك (مثل اللغة المفضلة وإعدادات التنسيق) محليًا على جهازك باستخدام التخزين المحلي للمتصفح. لا تغادر هذه المعلومات جهازك أبدًا وتُستخدم فقط لتحسين تجربتك مع التطبيق.",
+          youtubeTitle: "بيانات يوتيوب",
+          youtubeText: "عندما تستخدم خدمتنا لاستخراج إطارات من فيديوهات يوتيوب:",
+          youtubePoint1: "نحن نستخدم واجهة برمجة تطبيقات يوتيوب لعرض الفيديوهات",
+          youtubePoint2: "نحن نعالج فقط بيانات إطار الفيديو التي تطلبها صراحة",
+          youtubePoint3: "تتم جميع المعالجة في متصفحك، على جهازك",
+          youtubePoint4: "لا يتم إرسال أي محتوى فيديو أو بيانات مستخدم إلى خوادمنا",
+          changesTitle: "التغييرات على هذه السياسة",
+          changesText: "قد نقوم بتحديث سياسة الخصوصية الخاصة بنا من وقت لآخر. سنقوم بإخطارك بأي تغييرات من خلال نشر سياسة الخصوصية الجديدة على هذه الصفحة.",
+          contactTitle: "اتصل بنا",
+          contactText: "إذا كانت لديك أي أسئلة حول سياسة الخصوصية هذه، يرجى الاتصال بنا.",
+          backLink: "← العودة إلى الصفحة الرئيسية",
+          footerText: "مستخرج إطارات يوتيوب © 2025",
+          disclaimerText: "يوتيوب هي علامة تجارية لشركة Google LLC. هذه الأداة ليست مرتبطة أو معتمدة من قبل يوتيوب أو جوجل."
+        }
+      };
+      
+      // Set language from localStorage if available
+      let currentLang = 'en';
+      try {
+        const savedSettings = localStorage.getItem('yt-frame-extractor-settings');
+        if (savedSettings) {
+          const settings = JSON.parse(savedSettings);
+          currentLang = settings.language || 'en';
+        }
+      } catch (e) {
+        console.error('Error loading language settings:', e);
+      }
+      
+      // Update active language button
+      languageBtns.forEach(btn => {
+        if (btn.dataset.lang === currentLang) {
+          btn.classList.add('active');
+        } else {
+          btn.classList.remove('active');
+        }
+      });
+      
+      // Apply translations
+      function applyTranslations(lang) {
+        const elements = translations[lang];
+        for (const [id, text] of Object.entries(elements)) {
+          const element = document.getElementById(id);
+          if (element) {
+            element.textContent = text;
+          }
+        }
+        
+        // Set RTL for Arabic
+        document.body.style.direction = lang === 'ar' ? 'rtl' : 'ltr';
+      }
+      
+      // Initial application of translations
+      applyTranslations(currentLang);
+      
+      // Language switcher event listeners
+      languageBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const lang = btn.dataset.lang;
+          
+          // Update active state
+          languageBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          
+          // Save to localStorage
+          try {
+            const savedSettings = localStorage.getItem('yt-frame-extractor-settings');
+            let settings = { language: lang };
+            
+            if (savedSettings) {
+              settings = { ...JSON.parse(savedSettings), language: lang };
+            }
+            
+            localStorage.setItem('yt-frame-extractor-settings', JSON.stringify(settings));
+          } catch (e) {
+            console.error('Error saving language setting:', e);
+          }
+          
+          // Apply translations
+          applyTranslations(lang);
+        });
+      });
+    });
+  </script>
+</body>
+</html> 
